@@ -4,46 +4,96 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      body {
+  background-color: #141414;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.article {
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 12px;
+  width: 320px;
+  text-align: center;
+  width: 300px;
+}
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  .article-img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+  } 
+  h1 {
+    margin: 10px 0 5px;
+    color: white
+  }
+.location {
+  color: #b1ff55;
+  font-size: 14px;
+  margin-bottom: 15px;
+  margin: 20px 0;
+}
+.article-description {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 20px;
+} 
+.article-src button {
+  background-color: #1F1F1F; 
+  color:  #FFFFFF;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  margin: 8px 0;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+  width: 250px;
+  font-size: 14px;
+}
+
+.article-src button:hover {
+  background-color: #C4F82A;
+  color: #1F1F1F
+}
+@media (max-width: 400px) {
+  .article {
+    width: 90%;
+    padding: 15px;
+  }
+}
+    </style>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <article class="article">
       <img
         class="article-img"
-        src="profile-pic.png"
+        src="profile.svg"
         alt=""
         width="88px"
         height="88px"
       />
-      <div class="article-name">
-        <h2>Jessica Randall</h2>
+        <h1>Jessica Randall</h1>
       </div>
-      <div>
+      <div class="location">
         <h5>London, United Kingdom</h5>
       </div>
-      <p>"Front-end developer and avid reader."</p>
-      <div class="article-span">
-        <ul>
-          <li><span>GitHub</span></li>
-        </ul>
-        <ul>
-          <li><span>Frontend Mentor</span></li>
-        </ul>
-        <ul>
-          <li>
-<span>LinkedIn</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <span>Twitter</span>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <span>Instagram</span>
-          </li>
-        </ul>
+      <p class="article-description">"Front-end developer and avid reader."</p>
+      <div class="article-src">
+        <button>GitHub</button> 
+        <button>Frontend Mentor</button> 
+        <button>LinkedIn</button> 
+        <button>Twitter</button> 
+        <button>Instagram</button> 
       </div>
     </article>
   </body>
