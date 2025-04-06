@@ -1,0 +1,38 @@
+
+    body {
+        background-color: #141414;
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+      }
+
+.article {
+    background-color: #1f1f1f;
+    padding: 30px;
+    border-radius: 12px;
+    width: 320px;
+    text-align: center;
+    color: white;
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.article-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+.article-name {
+    font-weight: bold;
+    font-size: 1.2rem;
+  }
+}
+.article-span {
+  list-style-type: none;
+  padding-left: 0;
+}
+
